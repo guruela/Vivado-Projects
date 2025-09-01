@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="myDesign_axi_uartlite_0_0_synth_1" LaunchDir="D:/Xilinx/Projects/UART/UART.runs/myDesign_axi_uartlite_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="myDesign_microblaze_0_0_synth_1" LaunchDir="D:/Xilinx/Projects/UART/UART.runs/myDesign_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="myDesign_axi_interconnect_0_imp_xbar_0_synth_1" LaunchDir="D:/Xilinx/Projects/UART/UART.runs/myDesign_axi_interconnect_0_imp_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="myDesign_clk_wiz_0_0_synth_1" LaunchDir="D:/Xilinx/Projects/UART/UART.runs/myDesign_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="myDesign_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="D:/Xilinx/Projects/UART/UART.runs/myDesign_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="myDesign_dlmb_v10_0_synth_1" LaunchDir="D:/Xilinx/Projects/UART/UART.runs/myDesign_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="myDesign_lmb_bram_0_synth_1" LaunchDir="D:/Xilinx/Projects/UART/UART.runs/myDesign_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="myDesign_proc_sys_reset_0_0_synth_1" LaunchDir="D:/Xilinx/Projects/UART/UART.runs/myDesign_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="myDesign_ilmb_v10_0_synth_1" LaunchDir="D:/Xilinx/Projects/UART/UART.runs/myDesign_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="myDesign_dlmb_v10_0_synth_1"/>
+	</Run>
+	<Run Id="myDesign_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="D:/Xilinx/Projects/UART/UART.runs/myDesign_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="myDesign_mdm_1_0_synth_1" LaunchDir="D:/Xilinx/Projects/UART/UART.runs/myDesign_mdm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/Xilinx/Projects/UART/UART.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="myDesign_axi_uartlite_0_0_synth_1"/>
+		<Parent Id="myDesign_microblaze_0_0_synth_1"/>
+		<Parent Id="myDesign_axi_interconnect_0_imp_xbar_0_synth_1"/>
+		<Parent Id="myDesign_clk_wiz_0_0_synth_1"/>
+		<Parent Id="myDesign_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="myDesign_dlmb_v10_0_synth_1"/>
+		<Parent Id="myDesign_lmb_bram_0_synth_1"/>
+		<Parent Id="myDesign_proc_sys_reset_0_0_synth_1"/>
+		<Parent Id="myDesign_ilmb_v10_0_synth_1"/>
+		<Parent Id="myDesign_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="myDesign_mdm_1_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/Xilinx/Projects/UART/UART.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="myDesign_axi_uartlite_0_0_synth_1"/>
+		<Parent Id="myDesign_microblaze_0_0_synth_1"/>
+		<Parent Id="myDesign_axi_interconnect_0_imp_xbar_0_synth_1"/>
+		<Parent Id="myDesign_clk_wiz_0_0_synth_1"/>
+		<Parent Id="myDesign_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="myDesign_dlmb_v10_0_synth_1"/>
+		<Parent Id="myDesign_lmb_bram_0_synth_1"/>
+		<Parent Id="myDesign_proc_sys_reset_0_0_synth_1"/>
+		<Parent Id="myDesign_ilmb_v10_0_synth_1"/>
+		<Parent Id="myDesign_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="myDesign_mdm_1_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+		<Parameter Name="general.usePosixSpawnForFork" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

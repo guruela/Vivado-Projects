@@ -1,0 +1,429 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Sep  1 23:12:08 2025
+# Process ID         : 16352
+# Current directory  : D:/Xilinx/Projects/UART/UART.runs/synth_1
+# Command line       : vivado.exe -log myDesign_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source myDesign_wrapper.tcl
+# Log file           : D:/Xilinx/Projects/UART/UART.runs/synth_1/myDesign_wrapper.vds
+# Journal file       : D:/Xilinx/Projects/UART/UART.runs/synth_1\vivado.jou
+# Running On         : INBook_X1_Pro
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+# CPU Frequency      : 1498 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16905 MB
+# Swap memory        : 1253 MB
+# Total Virtual      : 18159 MB
+# Available Virtual  : 8595 MB
+#-----------------------------------------------------------
+source myDesign_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 531.520 ; gain = 248.621
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top myDesign_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13868
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1247.969 ; gain = 492.434
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'myDesign_wrapper' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/hdl/myDesign_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'myDesign' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:456]
+INFO: [Synth 8-6157] synthesizing module 'myDesign_axi_interconnect_0_0' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:720]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1XUR3BC' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1XUR3BC' (0#1) [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:13]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_5PFGBT' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_5PFGBT' (0#1) [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:128]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_TU6YY' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:1119]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_TU6YY' (0#1) [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:1119]
+INFO: [Synth 8-6157] synthesizing module 'myDesign_axi_interconnect_0_imp_xbar_0' [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_axi_interconnect_0_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myDesign_axi_interconnect_0_imp_xbar_0' (0#1) [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_axi_interconnect_0_imp_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'myDesign_axi_interconnect_0_imp_xbar_0' is unconnected for instance 'xbar' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:1078]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'myDesign_axi_interconnect_0_imp_xbar_0' is unconnected for instance 'xbar' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:1078]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'myDesign_axi_interconnect_0_imp_xbar_0' has 40 connections declared, but only 38 given [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:1078]
+INFO: [Synth 8-6155] done synthesizing module 'myDesign_axi_interconnect_0_0' (0#1) [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:720]
+WARNING: [Synth 8-7071] port 'M00_AXI_araddr' of module 'myDesign_axi_interconnect_0_0' is unconnected for instance 'axi_interconnect_0' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:542]
+WARNING: [Synth 8-7071] port 'M00_AXI_arvalid' of module 'myDesign_axi_interconnect_0_0' is unconnected for instance 'axi_interconnect_0' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:542]
+WARNING: [Synth 8-7071] port 'M00_AXI_awaddr' of module 'myDesign_axi_interconnect_0_0' is unconnected for instance 'axi_interconnect_0' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:542]
+WARNING: [Synth 8-7071] port 'M00_AXI_awvalid' of module 'myDesign_axi_interconnect_0_0' is unconnected for instance 'axi_interconnect_0' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:542]
+WARNING: [Synth 8-7071] port 'M00_AXI_bready' of module 'myDesign_axi_interconnect_0_0' is unconnected for instance 'axi_interconnect_0' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:542]
+WARNING: [Synth 8-7071] port 'M00_AXI_rready' of module 'myDesign_axi_interconnect_0_0' is unconnected for instance 'axi_interconnect_0' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:542]
+WARNING: [Synth 8-7071] port 'M00_AXI_wdata' of module 'myDesign_axi_interconnect_0_0' is unconnected for instance 'axi_interconnect_0' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:542]
+WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'myDesign_axi_interconnect_0_0' is unconnected for instance 'axi_interconnect_0' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:542]
+WARNING: [Synth 8-7071] port 'M00_AXI_wvalid' of module 'myDesign_axi_interconnect_0_0' is unconnected for instance 'axi_interconnect_0' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:542]
+WARNING: [Synth 8-7023] instance 'axi_interconnect_0' of module 'myDesign_axi_interconnect_0_0' has 61 connections declared, but only 52 given [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:542]
+INFO: [Synth 8-6157] synthesizing module 'myDesign_axi_uartlite_0_0' [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myDesign_axi_uartlite_0_0' (0#1) [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'myDesign_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:595]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'myDesign_axi_uartlite_0_0' has 22 connections declared, but only 21 given [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:595]
+INFO: [Synth 8-6157] synthesizing module 'myDesign_clk_wiz_0_0' [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myDesign_clk_wiz_0_0' (0#1) [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myDesign_mdm_1_0' [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myDesign_mdm_1_0' (0#1) [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myDesign_microblaze_0_0' [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myDesign_microblaze_0_0' (0#1) [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'myDesign_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:635]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'myDesign_microblaze_0_0' has 52 connections declared, but only 51 given [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:635]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_17BXNBI' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:243]
+INFO: [Synth 8-6157] synthesizing module 'myDesign_dlmb_bram_if_cntlr_0' [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myDesign_dlmb_bram_if_cntlr_0' (0#1) [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myDesign_dlmb_v10_0' [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myDesign_dlmb_v10_0' (0#1) [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'myDesign_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:368]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'myDesign_dlmb_v10_0' has 25 connections declared, but only 24 given [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:368]
+INFO: [Synth 8-6157] synthesizing module 'myDesign_ilmb_bram_if_cntlr_0' [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myDesign_ilmb_bram_if_cntlr_0' (0#1) [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myDesign_ilmb_v10_0' [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myDesign_ilmb_v10_0' (0#1) [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'myDesign_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:414]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'myDesign_ilmb_v10_0' has 25 connections declared, but only 24 given [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:414]
+INFO: [Synth 8-6157] synthesizing module 'myDesign_lmb_bram_0' [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myDesign_lmb_bram_0' (0#1) [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'myDesign_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:439]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'myDesign_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:439]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'myDesign_lmb_bram_0' has 16 connections declared, but only 14 given [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:439]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_17BXNBI' (0#1) [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:243]
+INFO: [Synth 8-6157] synthesizing module 'myDesign_proc_sys_reset_0_0' [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'myDesign_proc_sys_reset_0_0' (0#1) [D:/Xilinx/Projects/UART/UART.runs/synth_1/.Xil/Vivado-16352-INBook_X1_Pro/realtime/myDesign_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'myDesign_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:709]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'myDesign_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:709]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'myDesign_proc_sys_reset_0_0' has 10 connections declared, but only 8 given [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:709]
+INFO: [Synth 8-6155] done synthesizing module 'myDesign' (0#1) [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/synth/myDesign.v:456]
+INFO: [Synth 8-6155] done synthesizing module 'myDesign_wrapper' (0#1) [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/hdl/myDesign_wrapper.v:13]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_TU6YY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_TU6YY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_TU6YY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_TU6YY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_5PFGBT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_5PFGBT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_5PFGBT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_5PFGBT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_1XUR3BC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_1XUR3BC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_1XUR3BC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_1XUR3BC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[31] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[30] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[29] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[28] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[27] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[26] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[25] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[24] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[23] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[22] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[21] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[20] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[19] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[18] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[17] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[16] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[15] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[14] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[13] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[12] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[11] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[10] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[9] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[8] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[7] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[6] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[5] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[4] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[3] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[2] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_araddr[1] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[31] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[30] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[29] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[28] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[27] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[26] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[25] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[24] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[23] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[22] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[21] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[20] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[19] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[18] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[17] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[16] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[15] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[14] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[13] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[12] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[11] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[10] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[9] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[8] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[7] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[6] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[5] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[4] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[3] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[2] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_awaddr[1] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[31] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[30] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[29] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[28] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[27] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[26] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[25] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[24] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[23] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[22] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[21] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[20] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[19] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[18] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[17] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[16] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[15] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[14] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[13] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[12] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[11] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[10] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[9] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[8] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[7] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_wdata[6] in module myDesign_axi_interconnect_0_0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1362.082 ; gain = 606.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1362.082 ; gain = 606.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1362.082 ; gain = 606.547
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1362.082 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_microblaze_0_0/myDesign_microblaze_0_0/myDesign_microblaze_0_0_in_context.xdc] for cell 'myDesign_i/microblaze_0'
+Finished Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_microblaze_0_0/myDesign_microblaze_0_0/myDesign_microblaze_0_0_in_context.xdc] for cell 'myDesign_i/microblaze_0'
+Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_axi_uartlite_0_0/myDesign_axi_uartlite_0_0/myDesign_axi_uartlite_0_0_in_context.xdc] for cell 'myDesign_i/axi_uartlite_0'
+Finished Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_axi_uartlite_0_0/myDesign_axi_uartlite_0_0/myDesign_axi_uartlite_0_0_in_context.xdc] for cell 'myDesign_i/axi_uartlite_0'
+Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_axi_interconnect_0_imp_xbar_0/myDesign_axi_interconnect_0_imp_xbar_0/myDesign_axi_interconnect_0_imp_xbar_0_in_context.xdc] for cell 'myDesign_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_axi_interconnect_0_imp_xbar_0/myDesign_axi_interconnect_0_imp_xbar_0/myDesign_axi_interconnect_0_imp_xbar_0_in_context.xdc] for cell 'myDesign_i/axi_interconnect_0/xbar'
+Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_clk_wiz_0_0/myDesign_clk_wiz_0_0/myDesign_clk_wiz_0_0_in_context.xdc] for cell 'myDesign_i/clk_wiz_0'
+Finished Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_clk_wiz_0_0/myDesign_clk_wiz_0_0/myDesign_clk_wiz_0_0_in_context.xdc] for cell 'myDesign_i/clk_wiz_0'
+Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_proc_sys_reset_0_0/myDesign_proc_sys_reset_0_0/myDesign_proc_sys_reset_0_0_in_context.xdc] for cell 'myDesign_i/proc_sys_reset_0'
+Finished Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_proc_sys_reset_0_0/myDesign_proc_sys_reset_0_0/myDesign_proc_sys_reset_0_0_in_context.xdc] for cell 'myDesign_i/proc_sys_reset_0'
+Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_dlmb_v10_0/myDesign_dlmb_v10_0/myDesign_dlmb_v10_0_in_context.xdc] for cell 'myDesign_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_dlmb_v10_0/myDesign_dlmb_v10_0/myDesign_dlmb_v10_0_in_context.xdc] for cell 'myDesign_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_ilmb_v10_0/myDesign_ilmb_v10_0/myDesign_dlmb_v10_0_in_context.xdc] for cell 'myDesign_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_ilmb_v10_0/myDesign_ilmb_v10_0/myDesign_dlmb_v10_0_in_context.xdc] for cell 'myDesign_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_dlmb_bram_if_cntlr_0/myDesign_dlmb_bram_if_cntlr_0/myDesign_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'myDesign_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_dlmb_bram_if_cntlr_0/myDesign_dlmb_bram_if_cntlr_0/myDesign_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'myDesign_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_ilmb_bram_if_cntlr_0/myDesign_ilmb_bram_if_cntlr_0/myDesign_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'myDesign_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_ilmb_bram_if_cntlr_0/myDesign_ilmb_bram_if_cntlr_0/myDesign_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'myDesign_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_lmb_bram_0/myDesign_lmb_bram_0/myDesign_lmb_bram_0_in_context.xdc] for cell 'myDesign_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_lmb_bram_0/myDesign_lmb_bram_0/myDesign_lmb_bram_0_in_context.xdc] for cell 'myDesign_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_mdm_1_0/myDesign_mdm_1_0/myDesign_mdm_1_0_in_context.xdc] for cell 'myDesign_i/mdm_1'
+Finished Parsing XDC File [d:/Xilinx/Projects/UART/UART.gen/sources_1/bd/myDesign/ip/myDesign_mdm_1_0/myDesign_mdm_1_0/myDesign_mdm_1_0_in_context.xdc] for cell 'myDesign_i/mdm_1'
+Parsing XDC File [C:/Users/itspa/Downloads/Basys-3-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sys_clk'. [C:/Users/itspa/Downloads/Basys-3-Master.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'sys_clk'. [C:/Users/itspa/Downloads/Basys-3-Master.xdc:8]
+Finished Parsing XDC File [C:/Users/itspa/Downloads/Basys-3-Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/itspa/Downloads/Basys-3-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/myDesign_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/itspa/Downloads/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/myDesign_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/myDesign_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Xilinx/Projects/UART/UART.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Xilinx/Projects/UART/UART.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1362.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1362.082 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'myDesign_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1362.082 ; gain = 606.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1362.082 ; gain = 606.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1362.082 ; gain = 606.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1362.082 ; gain = 606.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1382.809 ; gain = 627.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1550.184 ; gain = 794.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1550.410 ; gain = 794.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1560.340 ; gain = 804.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1795.270 ; gain = 1039.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1795.270 ; gain = 1039.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1795.270 ; gain = 1039.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1795.270 ; gain = 1039.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1795.270 ; gain = 1039.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1795.270 ; gain = 1039.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------------+----------+
+|      |BlackBox name                          |Instances |
++------+---------------------------------------+----------+
+|1     |myDesign_axi_interconnect_0_imp_xbar_0 |         1|
+|2     |myDesign_axi_uartlite_0_0              |         1|
+|3     |myDesign_clk_wiz_0_0                   |         1|
+|4     |myDesign_mdm_1_0                       |         1|
+|5     |myDesign_microblaze_0_0                |         1|
+|6     |myDesign_proc_sys_reset_0_0            |         1|
+|7     |myDesign_dlmb_bram_if_cntlr_0          |         1|
+|8     |myDesign_dlmb_v10_0                    |         1|
+|9     |myDesign_ilmb_bram_if_cntlr_0          |         1|
+|10    |myDesign_ilmb_v10_0                    |         1|
+|11    |myDesign_lmb_bram_0                    |         1|
++------+---------------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------------+------+
+|      |Cell                                 |Count |
++------+-------------------------------------+------+
+|1     |myDesign_axi_interconnect_0_imp_xbar |     1|
+|2     |myDesign_axi_uartlite_0              |     1|
+|3     |myDesign_clk_wiz_0                   |     1|
+|4     |myDesign_dlmb_bram_if_cntlr          |     1|
+|5     |myDesign_dlmb_v10                    |     1|
+|6     |myDesign_ilmb_bram_if_cntlr          |     1|
+|7     |myDesign_ilmb_v10                    |     1|
+|8     |myDesign_lmb_bram                    |     1|
+|9     |myDesign_mdm_1                       |     1|
+|10    |myDesign_microblaze_0                |     1|
+|11    |myDesign_proc_sys_reset_0            |     1|
+|12    |IBUF                                 |     2|
+|13    |OBUF                                 |     1|
++------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1795.270 ; gain = 1039.734
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 136 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1795.270 ; gain = 1039.734
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1795.270 ; gain = 1039.734
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1798.281 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1801.867 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: adf328ba
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 132 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1801.867 ; gain = 1249.355
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1801.867 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Xilinx/Projects/UART/UART.runs/synth_1/myDesign_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file myDesign_wrapper_utilization_synth.rpt -pb myDesign_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  1 23:12:52 2025...

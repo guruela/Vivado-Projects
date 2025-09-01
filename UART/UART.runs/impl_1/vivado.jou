@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Sep  1 23:13:00 2025
+# Process ID         : 7744
+# Current directory  : D:/Xilinx/Projects/UART/UART.runs/impl_1
+# Command line       : vivado.exe -log myDesign_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source myDesign_wrapper.tcl -notrace
+# Log file           : D:/Xilinx/Projects/UART/UART.runs/impl_1/myDesign_wrapper.vdi
+# Journal file       : D:/Xilinx/Projects/UART/UART.runs/impl_1\vivado.jou
+# Running On         : INBook_X1_Pro
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+# CPU Frequency      : 1498 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16905 MB
+# Swap memory        : 1253 MB
+# Total Virtual      : 18159 MB
+# Available Virtual  : 8691 MB
+#-----------------------------------------------------------
+source myDesign_wrapper.tcl -notrace
